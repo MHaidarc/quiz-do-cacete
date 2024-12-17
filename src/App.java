@@ -1,30 +1,35 @@
 import java.util.Scanner;
-import java.util.Arrays;
 import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner ler = new Scanner(System.in);
+
         ArrayList<String> nomes = new ArrayList<String>();
         ArrayList<Integer> lista_de_pontos = new ArrayList<Integer>();
+
         char input;
         int pontos = 0;
 
+        //loop infinito até break
         do {
+
             System.out.print("Quer começar o quiz? [s/n] ");
             input = ler.nextLine().charAt(0);
 
+            //S continua o código, N quebra o loop e qualquer outro manda uma mensagem de erro e aborta.
             if (input == 'n' || input == 'N') {
                 break;
             } else if (input == 's' || input == 'S');
             else {
-                System.out.println("Entrada inválida! abortando!");
+                System.out.println("Entrada inválida. abortando...");
                 break;
             }
 
             System.out.print("Escreva seu nome: ");
             nomes.add(ler.nextLine());
 
+            //perguntinhas
             System.out.println("1. Qual a velocidade máxima permitida em vias urbanas, salvo sinalização em contrário?");
             System.out.println("A) 30 km/h");
             System.out.println("B) 50 km/h"); //certo
@@ -155,6 +160,7 @@ public class App {
                 pontos++;
             }
 
+            //printa os pontos, adiciona-os em uma lista e zera-os
             System.out.println("você fez " + pontos + " pontos");
             lista_de_pontos.add(pontos);
             pontos = 0;
@@ -162,6 +168,7 @@ public class App {
         } while (true);
 
 
+        //bubble sort de nomes e pontos
         int aux = 0;
         String auxString;
 
@@ -181,6 +188,7 @@ public class App {
         }
 
 
+        //printar ranking
         System.out.println("Rodada terminada!\nRanking:");
         for (int i = 0; i < nomes.size(); i++) {
             System.out.printf("%sº lugar: %s - %s pontos\n", i+1, nomes.get(i), lista_de_pontos.get(i));
