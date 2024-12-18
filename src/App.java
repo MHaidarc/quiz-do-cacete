@@ -18,8 +18,7 @@ public class App {
             System.out.print("Quer começar o quiz? [s/n] ");
             input = ler.next().charAt(0);
 
-            //TODO: trocar abortar por um loop que pergunta de novo
-            //S continua o código, N quebra o loop e qualquer outro manda uma mensagem de erro e aborta.
+            //S continua o código, N quebra o loop e qualquer outro manda uma mensagem de erro e loopa.
             do {
                 try {
                     if (input != 'n' && input != 'N' && input != 's' && input != 'S') {
