@@ -9,25 +9,48 @@ public class App {
         ArrayList<Integer> lista_de_pontos = new ArrayList<Integer>();
 
         char input;
+        String inputNome = "";
         int pontos = 0;
 
         //loop infinito até break
         do {
 
             System.out.print("Quer começar o quiz? [s/n] ");
-            input = ler.nextLine().charAt(0);
+            input = ler.next().charAt(0);
 
+            //TODO: trocar abortar por um loop que pergunta de novo
             //S continua o código, N quebra o loop e qualquer outro manda uma mensagem de erro e aborta.
+            do {
+                try {
+                    if (input != 'n' && input != 'N' && input != 's' && input != 'S') {
+                        throw new RuntimeException();
+                    }
+                    break;
+                } catch (RuntimeException e) {
+                    System.out.print("Entrada inválida. Tente novamente: ");
+                    input = ler.next().charAt(0);
+                }
+            } while (input != 'n' && input != 'N' && input != 's' && input != 'S');
+
             if (input == 'n' || input == 'N') {
-                break;
-            } else if (input == 's' || input == 'S');
-            else {
-                System.out.println("Entrada inválida. abortando...");
                 break;
             }
 
+            ler.nextLine();
             System.out.print("Escreva seu nome: ");
-            nomes.add(ler.nextLine());
+
+            do {
+                try {
+                    inputNome = ler.nextLine();
+
+                    if (inputNome.isEmpty()) {
+                        throw new RuntimeException();
+                    }
+                    nomes.add(inputNome);
+                } catch (RuntimeException e) {
+                    System.out.print("Nome não informado. Tente novamente: ");
+                }
+            } while (inputNome.isEmpty());
 
             //perguntinhas
             System.out.println("1. Qual a velocidade máxima permitida em vias urbanas, salvo sinalização em contrário?");
@@ -37,7 +60,7 @@ public class App {
             System.out.println("D) 80 km/h");
             System.out.println("E) 100 km/h");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
             
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -50,7 +73,7 @@ public class App {
             System.out.println("D) Todos os ocupantes do veículo"); //certo
             System.out.println("E) Somente para passageiros acima de 18 anos");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -63,7 +86,7 @@ public class App {
             System.out.println("D) 18 Anos"); //certo
             System.out.println("E) 21 Anos");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -76,7 +99,7 @@ public class App {
             System.out.println("D) 50 pontos");
             System.out.println("E) 60 pontos");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
             if (input == 'b' || input == 'B') {
                 pontos++;
             }
@@ -89,7 +112,7 @@ public class App {
             System.out.println("D) Não usar cinto de segurança");
             System.out.println("E) Transitar na contramão em via de mão única");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -102,7 +125,7 @@ public class App {
             System.out.println("");
             System.out.println("");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -115,7 +138,7 @@ public class App {
             System.out.println("");
             System.out.println(""); //certo
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -128,7 +151,7 @@ public class App {
             System.out.println("");
             System.out.println("");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -141,7 +164,7 @@ public class App {
             System.out.println("");
             System.out.println("");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
@@ -154,7 +177,7 @@ public class App {
             System.out.println(""); //certo
             System.out.println("");
             System.out.print("Resposta: ");
-            input= ler.nextLine().charAt(0);
+            input= ler.next().charAt(0);
 
             if (input == 'b' || input == 'B') {
                 pontos++;
