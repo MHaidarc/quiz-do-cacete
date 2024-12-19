@@ -270,6 +270,7 @@ public class App {
 
         } while (true);
 
+        ler.close();
 
         //bubble sort de nomes e pontos
         int aux = 0;
@@ -297,8 +298,6 @@ public class App {
             for (int i = 0; i < nomes.size(); i++) {
                 System.out.printf("%sº lugar: %s - %s pontos\n", i+1, nomes.get(i), lista_de_pontos.get(i));
             }
-            }
-        
-        ler.close();
+        }
     }
 }
