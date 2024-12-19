@@ -87,7 +87,7 @@ public class App {
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'c' || input == 'C') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -108,7 +108,7 @@ public class App {
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'd' || input == 'D') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -129,7 +129,7 @@ public class App {
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'c' || input == 'C') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -164,14 +164,14 @@ public class App {
                     System.out.println("A) grave");
                     System.out.println("B) média");
                     System.out.println("C) leve");
-                    System.out.println("D) gravíssima"); //certo
-                    System.out.println("E) não é uma infração"); 
+                    System.out.println("D) não é uma infração"); 
+                    System.out.println("E) gravíssima"); //certo
                     System.out.print("Resposta: ");
                     input = ler.next().charAt(0);
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'e' || input == 'E') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -181,18 +181,18 @@ public class App {
 
             do {
                 try {
-                    System.out.println("7) ");
-                    System.out.println("A) ");
-                    System.out.println("B) ");
-                    System.out.println("C) ");
-                    System.out.println("D) ");
-                    System.out.println("E) ");
+                    System.out.println("7) João dirigia em uma rodovia e, ao se aproximar de um cruzamento, ignorou a placa de “Pare” e avançou, causando uma colisão lateral. Qual infração João cometeu?");
+                    System.out.println("A) Direção defensiva");
+                    System.out.println("B) Falta de atenção ao trânsito");
+                    System.out.println("C) Direção negligente"); 
+                    System.out.println("D) Falta de manutenção do veículo");
+                    System.out.println("E) Desrespeito à placa de sinalização"); //certo
                     System.out.print("Resposta: ");
                     input = ler.next().charAt(0);
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'e' || input == 'E') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -202,18 +202,18 @@ public class App {
 
             do {
                 try {
-                    System.out.println("8) ");
-                    System.out.println("A) ");
-                    System.out.println("B) ");
-                    System.out.println("C) ");
-                    System.out.println("D) ");
-                    System.out.println("E) ");
+                    System.out.println("8) Carlos estava dirigindo em uma rodovia quando ultrapassou outro veículo pelo acostamento para evitar o trânsito intenso. Qual infração Carlos cometeu?");
+                    System.out.println("A) Ultrapassagem pelo acostamento, infração gravíssima"); //certo
+                    System.out.println("B) Ultrapassagem regular");
+                    System.out.println("C) Infração média");
+                    System.out.println("D) Direção defensiva");
+                    System.out.println("E) Desvio permitido em casos de emergência");
                     System.out.print("Resposta: ");
                     input = ler.next().charAt(0);
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'a' || input == 'A') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -223,18 +223,18 @@ public class App {
 
             do {
                 try {
-                    System.out.println("9) ");
-                    System.out.println("A) ");
-                    System.out.println("B) ");
-                    System.out.println("C) ");
-                    System.out.println("D) ");
-                    System.out.println("E) "); 
+                    System.out.println("9) Marta foi parada em uma blitz e recusou-se a fazer o teste do bafômetro, mesmo apresentando sinais de embriaguez. Qual será a penalidade?");
+                    System.out.println("A) Multa simples e advertência");
+                    System.out.println("B) Suspensão da CNH por 6 meses");
+                    System.out.println("C) Multa gravíssima, suspensão da CNH e apreensão do veículo"); //certo
+                    System.out.println("D) Apenas retenção do veículo");
+                    System.out.println("E) Penalidade somente se comprovada embriaguez através de outros testes"); 
                     System.out.print("Resposta: ");
                     input = ler.next().charAt(0);
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'c' || input == 'C') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
@@ -244,18 +244,18 @@ public class App {
 
             do {
                 try {
-                    System.out.println("10) ");
-                    System.out.println("A) ");
-                    System.out.println("B) ");
-                    System.out.println("C) ");
-                    System.out.println("D) ");
-                    System.out.println("E) "); 
+                    System.out.println("10) Durante uma tempestade, Carlos estacionou seu carro em uma ponte para esperar a chuva passar. De acordo com o CTB, ele cometeu: ");
+                    System.out.println("A) Infração grave"); //certo
+                    System.out.println("B) Infração gravíssima");
+                    System.out.println("C) Infração média");
+                    System.out.println("D) Infração leve");
+                    System.out.println("E) Não cometeu infração"); 
                     System.out.print("Resposta: ");
                     input = ler.next().charAt(0);
 
                     if (input != 'a' && input != 'A' && input != 'b' && input != 'B' && input != 'c' && input != 'C' && input != 'd' && input != 'D' && input != 'e' && input != 'E') {
                         throw new RuntimeException();
-                    } else if (input == 'b' || input == 'B') {
+                    } else if (input == 'a' || input == 'A') {
                         pontos++;
                     }
                 } catch (RuntimeException e) {
